@@ -1,6 +1,5 @@
 # jdbcmodel生成工具
-> 见智 & 基础库专用工具   
-若有模版变化，请联系wanggh修改模版
+> 欢迎联系wgh0807@qq.com
 
 ## 20200821 修改日志
 1. model 默认增加 Builder构造器
