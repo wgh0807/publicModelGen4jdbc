@@ -46,7 +46,11 @@ public class {{ param.className }} implements Persistable<{{ param.keyType }}> {
         this.{{ item.name }} = {{ item.name }};
     }
     {% endfor %}
-    {% if param.needBuilder  %}public static class Builder {
+    {% if param.needBuilder  %}public static Builder getBuilder() {
+        return new Builder();
+    }
+
+    public static class Builder {
         {% for item in param.properties %}/**
         * {{ item.annotation }}
         */
